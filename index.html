@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="view/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="view/style.css" media="screen" title="no title" charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="weatherCtrl">
+    <main>
+      <header class="landing-page-container">
+        <div class="landing-page">
+          <h1 class="landing-page-text">Hello!</h1>
+          <h3 class="landing-page-text2">{{weather.list[0].name}}</h3>
+        </div>
+      </header>
+      <section class="weather-info-container">
+        <div class="weather-info-data">
+          <div class="weather-tempature-info">
+            <p class="tempature-text">
+              {{weather.list[0].main.temp}}°
+            </p>
+          </div>
+        </div>
+        <div class="weather-info-data">
+          <div class="weather-description-info">
+            <p class="weather-description-text">
+              {{weather.list[0].weather[0].description}}
+            </p>
+          </div>
+        </div>
+        <div class="weather-info-data">
+          <div class="weather-wind-info">
+            <p class="weather-wind-text">
+              {{weather.list[0].wind.speed}}km/h
+            </p>
+            <p class="weather-wind-text2">
+              Wind Speed
+            </p>
+          </div>
+        </div>
+        <div class="weather-info-data">
+          <div class="weather-description-info">
+            <p class="weather-city-text">
+              {{weather.list[0].name}}
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script>
+  <script src="weatherApp.js" charset="utf-8"></script>
+  <script src="weatherApp.js" charset="utf-8"></script>
+  <script src="weatherCtrl.js" charset="utf-8"></script>
+  <script src="weatherService.js" charset="utf-8"></script>
+</html>

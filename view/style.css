@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.landing-page-container {
+  height: 100vh;
+  background-image: url("https://static.pexels.com/photos/17589/pexels-photo.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing-page-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30vh;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-text2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20vh;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-info-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-info-data {
+  width: 50%;
+  background-color: honeydew;
+}
+
+.weather-info-data:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 55, 55);
+}
+
+.weather-info-data:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 55, 55);
+}
+
+.weather-info-data:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(63, 123, 203);
+}
+
+.weather-info-data:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(63, 123, 203);
+}
+
+
+.tempature-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25vh;
+  font-weight: 700;
+  color: white;
+}
+
+.weather-description-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15vh;
+  color: white;
+}
+
+.weather-wind-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15vh;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-wind-text2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5vh;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-city-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15vh;
+  font-weight: 700;
+  color: white;
+}
