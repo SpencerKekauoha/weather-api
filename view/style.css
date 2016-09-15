@@ -1,16 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+/*main {
+  height: 100%;
+  width: 100vw;
+}*/
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 .landing-page-container {
   height: 100vh;
-  background-image: url("https://static.pexels.com/photos/17589/pexels-photo.jpg");
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top:0;
+  bottom: 0;
+  background-image: url("fall.jpeg");
+  background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
 }
 
 .landing-page {
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 .landing-page-text {
@@ -36,12 +56,68 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .landing-page-text {
+    font-size: 60px;
+    margin-bottom: 15px
+  }
+  .landing-page-text2 {
+    font-size: 40px;
+  }
+}
+
 .weather-info-container {
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .weather-info-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .weather-info-data:nth-child(1) {
+    height: 200px;
+    width: 100%;
+  }
+  .temperature-text {
+    font-size: 40px !important;
+  }
+  .weather-info-data:nth-child(2) {
+    height: 200px;
+    width: 100%;
+  }
+  .weather-description-text {
+    font-size: 40px !important;
+  }
+  .weather-info-data:nth-child(3) {
+    height: 200px;
+    width: 100%;
+  }
+  .weather-wind-text {
+    font-size: 40px !important;
+  }
+  .weather-wind-text2 {
+    font-size: 40px !important;
+  }
+  .weather-info-data:nth-child(4) {
+    height: 200px;
+    width: 100%;
+  }
+  .weather-city-text {
+    font-size: 40px !important;
+  }
 }
 
 .weather-info-data {
@@ -78,22 +154,22 @@
 }
 
 
-.tempature-text {
+.temperature-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25vh;
+  font-size: 60px;
   font-weight: 700;
   color: white;
 }
 
 .weather-description-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15vh;
+  font-size: 60px;
   color: white;
 }
 
 .weather-wind-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15vh;
+  font-size: 60px;
   font-weight: 700;
   color: white;
   display: flex;
@@ -103,7 +179,7 @@
 
 .weather-wind-text2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5vh;
+  font-size: 60px;
   font-weight: 300;
   color: white;
   display: flex;
@@ -113,7 +189,7 @@
 
 .weather-city-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15vh;
+  font-size: 60px;
   font-weight: 700;
   color: white;
 }
